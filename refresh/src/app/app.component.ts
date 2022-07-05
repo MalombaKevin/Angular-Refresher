@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Refresh } from './refresh';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +7,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'refresh';
+  names:Refresh[] = [
+
+    {id:1, name:'Kevin', school:'JKUAT'},
+    {id:1, name:'William', school:'KU'},
+  ]
 }

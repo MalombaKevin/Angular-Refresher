@@ -34,5 +34,6 @@
 ### running angular app
  + cd refresh/ <br> [change directory to the app]
  + ng serve --open  [run the app]
-    
+### create a component
+ + ng generate component component-name <br> [create a component]
 
