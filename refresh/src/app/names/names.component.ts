@@ -17,6 +17,12 @@ export class NamesComponent implements OnInit {
     this.names[index].showdescription = !this.names[index].showdescription;
   }
 
+  completeRefresh(isComplete:any, index:any){
+    if (isComplete) {
+      this.names.splice(index,1);
+    }
+  }
+
 
   constructor() { }
 

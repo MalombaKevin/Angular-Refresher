@@ -5,12 +5,14 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { NamesComponent } from './names/names.component';
 import { NameDetailsComponent } from './name-details/name-details.component';
+import { MalombaComponent } from './malomba/malomba.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     NamesComponent,
-    NameDetailsComponent
+    NameDetailsComponent,
+    MalombaComponent
   ],
   imports: [
     BrowserModule,

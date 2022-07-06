@@ -1,4 +1,4 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 import { Refresh } from '../refresh';
 
 @Component({
@@ -8,6 +8,13 @@ import { Refresh } from '../refresh';
 })
 export class NameDetailsComponent implements OnInit {
   @Input() kevo!: Refresh;
+
+  @Output() isComplete = new EventEmitter<boolean>();
+
+  nameComplete(complete:boolean){
+    this.isComplete.emit(complete);
+  }
+
 
   constructor() { }
 
