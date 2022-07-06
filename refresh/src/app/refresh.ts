@@ -1,6 +1,7 @@
 export class Refresh {
-    id!:number;
-    name!:string;
-    school!:string;
+    showdescription: boolean;
+    constructor(public id: number, public name: string, public school: string, public description: string) {
+        this.showdescription = false;
+    }
 
 }

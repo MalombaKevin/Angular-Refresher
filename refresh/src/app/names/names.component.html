@@ -1,0 +1,9 @@
+<li *ngFor="let name of names;let i=index">{{name.id}} {{name.name}}  {{name.school}}
+    <button (click)='toggleDetails(i)'>Toggle Details</button>
+    <app-name-details *ngIf="name.showdescription" [kevo]='name'></app-name-details>
+
+</li>
+
+
+
+<p *ngIf="names.length >0">Hi</p>

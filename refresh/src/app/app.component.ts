@@ -7,9 +7,5 @@ import { Refresh } from './refresh';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  names:Refresh[] = [
-
-    {id:1, name:'Kevin', school:'JKUAT'},
-    {id:1, name:'William', school:'KU'},
-  ]
+ 
 }
